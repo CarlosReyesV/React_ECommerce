@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+    margin-top: 10px;
+    width: 115px;
+}
+
+.drawerImage {
+    width: 100px;
+    min-width: none;
+    height: 100px;
+    min-height: none;
+}
+
+.page-head-height {
+    height: 440px
+}
+
+.drawerIcon .anticon svg {
+    color: red;
+}
+
+@media only screen and (max-width: 991.5px) {
+    .footerLogo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 766.5px) {
+    .burgerMenu {
+        display: none
+    }
+
+    .ant-dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 766.5px) {
+    .burgerMenu {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px
+    }
+}
